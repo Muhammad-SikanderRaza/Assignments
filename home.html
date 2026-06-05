@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taj Restaurant</title>
+  <style>
+    body { font-family: Times New Roman, serif; margin: 20px; background: white; color: black; }
+    h1 { font-size: 2em; }
+    hr { border: 1px solid #999; }
+    nav a { color: blue; text-decoration: underline; margin-right: 5px; }
+    table { border-collapse: collapse; font-size: 0.9em; }
+    table, th, td { border: 1px solid black; }
+    th, td { padding: 4px 8px; }
+    .stars { color: gold; }
+    .buy-btn { background: white; border: 1px solid black; cursor: pointer; padding: 2px 6px; font-size: 0.85em; }
+    .thank-you { color: red; font-size: 0.85em; }
+    .gallery { display: flex; gap: 10px; margin: 10px 0; }
+    .gallery img { width: 280px; height: 180px; object-fit: cover; }
+    ul { margin: 6px 0; padding-left: 20px; }
+    .footer { margin-top: 30px; font-size: 0.85em; }
+    .footer a { color: blue; }
+    .highlight { background: yellow; }
+    video { width: 580px; height: 320px; display: block; margin: 10px 0; }
+    .special-offers ul li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ Welcome to Taj Restaurant 🍽️</h1>
+  <p><strong>Where taste meets tradition and every meal tells a story!</strong></p>
+  <hr>
+
+  <nav>
+    🏠 <a href="index.html">Home</a> |
+    📅 <a href="booking.html">Booking</a> |
+    ℹ️ <a href="about_us.html">About Us</a>
+  </nav>
+
+  <hr>
+
+  <h2>📷 Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=280&h=180&fit=crop" alt="Chef">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=280&h=180&fit=crop" alt="Food Bowl">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=280&h=180&fit=crop" alt="Dishes">
+  </div>
+
+  <h2>🍽️ Our A<sup>+</sup> Sindhi Traditional Menu 🍽️</h2>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Category</th>
+        <th rowspan="2">Dish</th>
+        <th colspan="2">Details</th>
+        <th rowspan="2">Price</th>
+        <th rowspan="2">Action</th>
+      </tr>
+      <tr>
+        <th>Description</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">Main Course</td>
+        <td>Sindhi Biryani</td>
+        <td>Spicy rice with mutton &amp; potatoes</td>
+        <td class="stars">★★★☆☆</td>
+        <td>Rs.900</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Sindhi Kadhi</td>
+        <td>Tangy curry with vegetables &amp; rice</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.700</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Sai Bhaji</td>
+        <td>Spinach, lentils &amp; spices</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.800</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Bhugal Gosht</td>
+        <td>Slow-cooked spicy meat curry</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.1200</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Starters</td>
+        <td>Sindhi Koki</td>
+        <td>Flatbread with onions &amp; spices</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.400</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Aloo Tikki</td>
+        <td>Spicy fried potato cutlets</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.300</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Dal Pakwan</td>
+        <td>Crispy bread with spicy lentils</td>
+        <td class="stars">★★★★★</td>
+        <td>Rs.600</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Desserts</td>
+        <td>Sindhi Seviyan</td>
+        <td>Sweet vermicelli cooked in milk</td>
+        <td class="stars">★★★★★</td>
+        <td>Rs.400</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Singhar Ji Mithai</td>
+        <td>Special Sindhi sweet with cardamom</td>
+        <td class="stars">★★★★★</td>
+        <td>Rs.500</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Phirni</td>
+        <td>Rice pudding served in clay pots</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.400</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Beverages</td>
+        <td>Thadal</td>
+        <td>Cooling drink with almonds &amp; seeds</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.300</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Rabri</td>
+        <td>Thickened sweet milk with nuts</td>
+        <td class="stars">★★★★☆</td>
+        <td>Rs.500</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td>Chhach</td>
+        <td>Refreshing spiced buttermilk</td>
+        <td class="stars">★★★☆☆</td>
+        <td>Rs.200</td>
+        <td><button class="buy-btn">Buy Now</button></td>
+      </tr>
+      <tr>
+        <td colspan="6" class="thank-you">❤️ Thank you for visiting Taj Restaurant! ❤️</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🎉 Special Offers</h2>
+  <ul>
+    <li><strong>Monday:</strong> Buy 1 Biryani, Get 1 Free Drink</li>
+    <li><strong>Wednesday:</strong> Kids Eat Free with Family Meals</li>
+    <li><strong>Friday:</strong> Flat 20% Off on Desserts</li>
+    <li><strong>Weekend:</strong> Family Platter for $25 only</li>
+  </ul>
+
+  <h3>Watch our chefs in action:</h3>
+  <video controls>
+    <source src="chef_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Why Choose Us?</h2>
+  <p>At <em>Taj Restaurant</em>, we serve <a href="#">authentic flavors</a> with love. Our menu brings together <strong>traditional recipes</strong> and <strong>modern cuisines</strong>. Whether you are dining in with family, celebrating with friends, or ordering a quick meal, we guarantee <span class="highlight">quality and freshness</span>.</p>
+
+  <hr>
+  <div class="footer">
+    All Rights are reserved by Taj Restaurant | This site is developed by <a href="#">Rajesh Kumar</a>
+  </div>
+
+</body>
+</html>

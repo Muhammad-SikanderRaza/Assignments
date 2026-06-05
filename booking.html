@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taj Restaurant</title>
+  <style>
+    body { font-family: Times New Roman, serif; margin: 20px; background: white; color: black; }
+    h1 { font-size: 2em; }
+    hr { border: 1px solid #999; }
+    nav a { color: blue; text-decoration: underline; margin-right: 5px; }
+    label { display: inline-block; margin-bottom: 4px; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"],
+    input[type="datetime-local"], select, textarea {
+      border: 1px solid #999; padding: 3px 6px; font-family: Times New Roman, serif;
+    }
+    .section-title { font-weight: bold; margin-top: 18px; margin-bottom: 8px; font-size: 1.1em; }
+    .field-row { margin-bottom: 8px; }
+    textarea { width: 300px; height: 80px; resize: vertical; }
+    button { cursor: pointer; padding: 4px 10px; font-family: Times New Roman, serif; }
+    .btn-confirm { background: white; border: 1px solid black; }
+    .btn-clear { background: white; border: 1px solid black; }
+    .footer { margin-top: 30px; font-size: 0.85em; }
+    .footer a { color: blue; }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ Welcome to Taj Restaurant 🍽️</h1>
+  <p><strong>Where taste meets tradition and every meal tells a story!</strong></p>
+  <hr>
+
+  <nav>
+    🏠 <a href="index.html">Home</a> |
+    📅 <a href="booking.html">Booking</a> |
+    ℹ️ <a href="about_us.html">About Us</a>
+  </nav>
+
+  <hr>
+
+  <h2>📝 Book Your Table</h2>
+
+  <div class="section-title">👤 Customer Information</div>
+
+  <div class="field-row">
+    <label>Full Name: <input type="text" placeholder="Enter your name"></label>
+  </div>
+  <div class="field-row">
+    <label>Email Address: <input type="email" placeholder="example@email.com"></label>
+  </div>
+  <div class="field-row">
+    <label>Phone Number: <input type="tel" placeholder="+92-300-1234567"></label>
+  </div>
+
+  <div class="section-title">📅 Booking Details</div>
+
+  <div class="field-row">
+    Booking Type:<br>
+    <input type="radio" name="booking_type" id="table"> <label for="table">Table Reservation</label><br>
+    <input type="radio" name="booking_type" id="takeaway"> <label for="takeaway">Takeaway Order</label><br>
+    <input type="radio" name="booking_type" id="party"> <label for="party">Party / Event Booking</label>
+  </div>
+
+  <div class="field-row">
+    <label>Date and time: <input type="datetime-local"></label>
+  </div>
+
+  <div class="field-row">
+    <label>Number of Guests: <input type="number" value="2" style="width:60px;"></label>
+  </div>
+
+  <div class="section-title">🍴 Food Preferences</div>
+
+  <div class="field-row">
+    <label>Select Cuisine:
+      <select>
+        <option value="">-- Select Cuisine --</option>
+        <option>Pakistani</option>
+        <option>Sindhi</option>
+        <option>International</option>
+        <option>Vegetarian</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="field-row">
+    Special Dishes (multiple selection allowed):<br>
+    <input type="checkbox" id="biryani"> <label for="biryani">Sindhi Biryani</label><br>
+    <input type="checkbox" id="kadhi"> <label for="kadhi">Sindhi Kadhi</label><br>
+    <input type="checkbox" id="pakwan"> <label for="pakwan">Dal Pakwan</label><br>
+    <input type="checkbox" id="machli"> <label for="machli">Fried Machli</label><br>
+    <input type="checkbox" id="gosht"> <label for="gosht">Bughal Gosht</label>
+  </div>
+
+  <div class="section-title">📋 Special Requests</div>
+
+  <div class="field-row">
+    Write any special instructions:<br>
+    <textarea placeholder="E.g. Vegetarian food, less spicy, birthday decoration"></textarea>
+  </div>
+
+  <div class="section-title">💳 Payment Method</div>
+
+  <div class="field-row">
+    <input type="radio" name="payment" id="cash"> <label for="cash">Cash on Arrival</label><br>
+    <input type="radio" name="payment" id="card"> <label for="card">Credit/Debit Card</label><br>
+    <input type="radio" name="payment" id="online"> <label for="online">Online Payment</label>
+  </div>
+
+  <div style="margin-top: 14px;">
+    <button class="btn-confirm" onclick="alert('Booking Confirmed!')">✅ Confirm Booking</button>
+    &nbsp;
+    <button class="btn-clear" onclick="location.reload()">❌ Clear Form</button>
+  </div>
+
+  <hr>
+  <div class="footer">
+    All Rights are reserved by Taj Restaurant | This site is developed by <a href="#">Rajesh Kumar</a>
+  </div>
+
+</body>
+</html>
