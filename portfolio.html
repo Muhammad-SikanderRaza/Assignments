@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f5f6f8;
+      }
+
+      /* Container */
+      .container {
+        width: 85%;
+        margin: auto;
+      }
+
+      /* Navbar */
+      header {
+        background: white;
+        padding: 15px 0;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      /* Hero */
+      .hero {
+        background: #cfd6df;
+        padding: 80px 0;
+      }
+
+      .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .text h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .text h3 {
+        font-weight: normal;
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      .text p {
+        margin-bottom: 20px;
+        color: #555;
+      }
+
+      button {
+        background: #3b6df6;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      /* Image */
+      .image img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* Projects */
+      .projects {
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      .projects h2 {
+        margin-bottom: 40px;
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card h4 {
+        margin: 15px;
+      }
+
+      .card p {
+        margin: 0 15px 10px;
+        color: #666;
+      }
+
+      .card a {
+        margin-left: 15px;
+        color: #3b6df6;
+        text-decoration: none;
+      }
+
+      /* Footer */
+      footer {
+        background: #1e2a38;
+        color: white;
+        padding: 20px 0;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .icons span {
+        margin-left: 15px;
+        font-size: 18px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="container nav">
+        <h2>Portfolio</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="text">
+          <h1>Hi, I'm Rajesh Kumar</h1>
+          <h3>Frontend Developer</h3>
+          <p>
+            I build beautiful, responsive websites with modern technologies.
+          </p>
+          <button>Get In Touch</button>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1581092335878-4c3a1e3b4e7b"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="container cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+            />
+          <h4>E-commerce Website</h4>
+          <p>
+            A fully responsive e-commerce platform built with React and Node.js.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+          />
+          <h4>Task Management App</h4>
+          <p>
+            A productivity application for managing daily tasks and projects.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+          />
+          <h4>Weather Dashboard</h4>
+          <p>
+            Real-time weather information with 5-day forecast for any location.
+          </p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer">
+        <p>© 2025 Rajesh Kumar. All rights reserved.</p>
+        <div class="icons">
+          <span><i class="fa-brands fa-github"></i></span>
+          <span><i class="fa-brands fa-square-linkedin"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
